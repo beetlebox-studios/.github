@@ -32,7 +32,7 @@ function team(people) {
     const name = key ? `<a href="${p.links[key]}">${p.name}</a>` : p.name;
     return [
       '  <tr>',
-      `    <td><strong>${p.role}</strong></td>`,
+      `    <td><strong>${(p.roles ?? [p.role]).join(', ')}</strong></td>`,
       `    <td>${name}</td>`,
       `    <td>${p.founder ? 'Founding member' : 'Collaborator'}</td>`,
       '  </tr>',

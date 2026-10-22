@@ -9,7 +9,7 @@ BeetleBox Studios is a creative team based in Philadelphia, developing interacti
     <td>Founding member</td>
   </tr>
   <tr>
-    <td><strong>Artist and Designer</strong></td>
+    <td><strong>Game Designer, Artist</strong></td>
     <td><a href="https://alphons6.itch.io/">Max</a></td>
     <td>Founding member</td>
   </tr>
@@ -29,7 +29,7 @@ BeetleBox Studios is a creative team based in Philadelphia, developing interacti
     <td>Collaborator</td>
   </tr>
   <tr>
-    <td><strong>Game designer</strong></td>
+    <td><strong>Game Designer</strong></td>
     <td><a href="https://mr-qwil.itch.io/">Michael</a></td>
     <td>Collaborator</td>
   </tr>
@@ -46,6 +46,11 @@ BeetleBox Studios is a creative team based in Philadelphia, developing interacti
   <tr>
     <td><strong>Puzzle Designer</strong></td>
     <td><a href="https://hutt3.itch.io/">hutthutthutt</a></td>
+    <td>Collaborator</td>
+  </tr>
+  <tr>
+    <td><strong>Game Designer, Artist</strong></td>
+    <td><a href="https://enchae.itch.io/">Enchae</a></td>
     <td>Collaborator</td>
   </tr>
 </table>
@@ -74,13 +79,19 @@ As our Nation turns 250, what does this number even mean? A number trivia game. 
 
 <img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/sumo_thumbnail.png" alt="Sumo Square" width="260"/>
 
-By Elan, Max, Ryan and Andrew. *Draft · In Development · Jam game*
+By Elan, Max, Ryan and Andrew. *Released · Jam game* [Play on itch.io](https://elanmakesgames.itch.io/sumo-square)
 
 ### Katami
 
 <img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/katami_thumbnail.png" alt="Katami" width="260"/>
 
 A puzzle game about folding paper. By Max, Ryan, AnglerFishArt, hutthutthutt and Mafgar. *In Development* [Wishlist on Steam](https://store.steampowered.com/app/3828230/KATAMI_A_Paper_Story/)
+
+### Learn to Count
+
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/learntocount_thumbnail.png" alt="Learn to Count" width="260"/>
+
+By Max, Ryan, Michael and Enchae. *Released · Jam game* [Play on itch.io](https://alphons6.itch.io/learn-to-count)
 
 ### Masknum Opus
 
