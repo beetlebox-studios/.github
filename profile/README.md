@@ -3,129 +3,93 @@ BeetleBox Studios is a creative team based in Philadelphia, developing interacti
 <hr>
 
 <table>
-
   <tr>
-    <td><strong>Systems programming</strong></td>
-    <td>
-      <a href="https://elanrubin.com/" text-decoration:none;">
-        Elan
-      </a>
-    </td>
+    <td><strong>Programmer</strong></td>
+    <td><a href="https://elanrubin.com/">Elan</a></td>
     <td>Founding member</td>
   </tr>
-
   <tr>
-    <td><strong>Game art & design</strong></td>
-    <td>
-      <a href="https://alphons6.itch.io/" text-decoration:none;">
-        Alphons63
-      </a>
-    </td>
+    <td><strong>Artist and Designer</strong></td>
+    <td><a href="https://alphons6.itch.io/">Max</a></td>
     <td>Founding member</td>
   </tr>
-
   <tr>
-    <td><strong>Programming</strong></td>
-    <td>
-      <a href="https://github.com/Ryan-Brosius" text-decoration:none;">
-        Ryan
-      </a>
-    </td>
+    <td><strong>Programmer</strong></td>
+    <td><a href="https://github.com/Ryan-Brosius">Ryan</a></td>
     <td>Founding member</td>
   </tr>
-
   <tr>
-    <td><strong>Concept art</strong></td>
-    <td>
-      <a href="https://x.com/AnglerFishart13" text-decoration:none;">
-        Anglerfishart
-      </a>
-    </td>
+    <td><strong>Artist</strong></td>
+    <td><a href="https://drewg8.itch.io/">Drew</a></td>
     <td>Collaborator</td>
   </tr>
-
   <tr>
-    <td><strong>Development & production</strong></td>
-    <td>
-      <a href="https://mr-qwil.itch.io/" text-decoration:none;">
-        Michael
-      </a>
-    </td>
+    <td><strong>Artist</strong></td>
+    <td><a href="https://oktangy.itch.io/">Andrew</a></td>
     <td>Collaborator</td>
   </tr>
-
   <tr>
-    <td><strong>Sound design</strong></td>
-    <td>
-      <a href="https://www.mafgar.com/" text-decoration:none;">
-        Mafgar
-      </a>
-    </td>
+    <td><strong>Game designer</strong></td>
+    <td><a href="https://mr-qwil.itch.io/">Michael</a></td>
     <td>Collaborator</td>
   </tr>
-
   <tr>
-    <td><strong>Puzzle design</strong></td>
-    <td>
-      <a href="https://hutt3.itch.io/" text-decoration:none;">
-        hutthutthutt
-      </a>
-    </td>
+    <td><strong>Concept Artist</strong></td>
+    <td><a href="https://x.com/AnglerFishart13">AnglerFishArt</a></td>
     <td>Collaborator</td>
   </tr>
-
+  <tr>
+    <td><strong>Musician</strong></td>
+    <td><a href="https://www.mafgar.com/">Mafgar</a></td>
+    <td>Collaborator</td>
+  </tr>
+  <tr>
+    <td><strong>Puzzle Designer</strong></td>
+    <td><a href="https://hutt3.itch.io/">hutthutthutt</a></td>
+    <td>Collaborator</td>
+  </tr>
 </table>
 
 <hr>
 
-### Katami: A Paper Story
+### Bubblefish
 
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/bubblefish_thumbnail.png" alt="Bubblefish" width="260"/>
 
-<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/katami_thumbnail.png" 
-  alt="Katami Banner"
-  width="260"
-  style="display:block; margin-bottom:6px;"/>
+Puru Puru is a pufferfish who wants his tank all to himself. By Elan, Max, AnglerFishArt and Andrew. *Shelved* [Play on itch.io](https://elanmakesgames.itch.io/bubblefish)
 
+### Book Wyrm
 
-<p style="max-width:260px; color:#444;">
-  <strong style="color:#e77046;">Katami</strong> is a handcrafted puzzle game about paper, patience, and finding the shape of a friendship. Release date TBA, <a href="https://store.steampowered.com/app/3828230/KATAMI_A_Paper_Story/" text-decoration:none;"> Wishlist Here </a>
-</p>
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/bookwyrm_thumbnail.png" alt="Book Wyrm" width="260"/>
 
-### BubbleFish
+A retro word dungeon crawler. By Elan and Max. *Draft · In Development* [Play in browser](https://beetlebox-studios.github.io/games/lexwright/)
 
-<img
-  src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/bubblefish_thumbnail.png"
-  alt="BubbleFish Banner"
-  width="260"
-  style="display:block; margin-bottom:6px;"
-/>
+### 250 is...
 
-<p>
-  <strong style="color:#e77046;">BubbleFish</strong> is a frantic, retro-styled action game. Release date TBA.
-</p>
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/250is_thumbnail.png" alt="250 is..." width="260"/>
+
+As our Nation turns 250, what does this number even mean? A number trivia game. By Elan, Max, Drew, Ryan and Ako. *In Development · Jam game* [Play on itch.io](https://elanmakesgames.itch.io/250)
+
+### Sumo Square
+
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/sumo_thumbnail.png" alt="Sumo Square" width="260"/>
+
+By Elan, Max, Ryan and Andrew. *Draft · In Development · Jam game*
+
+### Katami
+
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/katami_thumbnail.png" alt="Katami" width="260"/>
+
+A puzzle game about folding paper. By Max, Ryan, AnglerFishArt, hutthutthutt and Mafgar. *In Development* [Wishlist on Steam](https://store.steampowered.com/app/3828230/KATAMI_A_Paper_Story/)
 
 ### Masknum Opus
 
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/masknum_thumbnail.png" alt="Masknum Opus" width="260"/>
 
-<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/masknum_thumbnail.png" 
-  alt="Masknum Banner"
-  width="260"
-  style="display:block; margin-bottom:6px;"/>
-
-
-<p style="max-width:260px; color:#444;">
-  <strong style="color:#e77046;">Masknum Opus</strong> is a short 2D experience about infiltrating a secretive initiation ceremony.  <a href="https://elanmakesgames.itch.io/mask" text-decoration:none;"> Launch Here </a>
-</p>
+Infiltrate a bizarre, masked cult. By Elan, Michael, Ryan and Max. *Released · Jam game* [Play on itch.io](https://elanmakesgames.itch.io/mask)
 
 ### Molith
 
+<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/molith_thumbnail.png" alt="Molith" width="260"/>
 
-<img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/molith_thumbnail.png" 
-  alt="Molith Banner"
-  width="260"
-  style="display:block; margin-bottom:6px;"/>
-
-
-<p style="max-width:260px; color:#444;">
-  <strong style="color:#e77046;">Molith</strong> is a short, experimental 3D walking simulator about exploring megastructures.  <a href="https://elanmakesgames.itch.io/molith" text-decoration:none;"> Launch Here </a>
-</p>
+Explore a mysterious field. By Elan, Max and Mafgar. *Released · Jam game* [Play on itch.io](https://elanmakesgames.itch.io/molith)

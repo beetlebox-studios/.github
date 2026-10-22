@@ -1,0 +1,53 @@
+name: README
+
+on:
+  schedule:
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'profile/README.template.md'
+      - 'scripts/build-readme.mjs'
+      - '.github/workflows/readme.yml'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: readme
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Build README from site data
+        run: node scripts/build-readme.mjs
+
+      - name: Open or update PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet profile/README.md; then
+            echo "README unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c chore/readme-sync
+          git add profile/README.md
+          git commit -m "docs: rebuild readme from site data"
+          git push -f origin chore/readme-sync
+          if [ -z "$(gh pr list --head chore/readme-sync --state open --json number --jq '.[].number')" ]; then
+            gh pr create --base main --head chore/readme-sync \
+              --title "docs: rebuild readme from site data" \
+              --body "Rebuilt from the site's data/games.json and data/people.json."
+          fi
