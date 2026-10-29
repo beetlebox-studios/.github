@@ -43,17 +43,19 @@ function team(people) {
 
 function project(g) {
   const out = [`### ${g.title}`, ''];
-  if (g.image) {
-    out.push(`<img src="${g.image}" alt="${g.title}" width="260"/>`, '');
-  }
-  const parts = [];
-  if (g.description) parts.push(g.description);
-  if (g.credits?.length) parts.push(`By ${list(g.credits)}.`);
-  const facts = [g.draft ? 'Draft' : null, g.status, g.jam ? 'Jam game' : null].filter(Boolean).join(' · ');
-  if (facts) parts.push(`*${facts}*`);
   const store = STORE_LINKS.find((s) => g.links?.[s.key]);
-  if (store) parts.push(`[${store.label}](${g.links[store.key]})`);
-  out.push(parts.join(' '));
+  const href = store ? g.links[store.key] : null;
+  if (g.image) {
+    const img = `<img src="${g.image}" alt="${g.title}" width="260"/>`;
+    out.push(href ? `<a href="${href}">${img}</a>` : img, '');
+  }
+  const lines = [];
+  if (g.description) lines.push(g.description);
+  if (g.credits?.length) lines.push(`By ${list(g.credits)}.`);
+  const facts = [g.meta, g.draft ? 'Draft' : null, g.status, g.jam ? 'Jam game' : null].filter(Boolean).join(' · ');
+  if (facts) lines.push(`*${facts}*`);
+  if (store) lines.push(`[${store.label}](${href})`);
+  out.push(lines.join('<br>\n'));
   return out.join('\n');
 }
 
