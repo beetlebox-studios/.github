@@ -1,0 +1,55 @@
+name: Project sync
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Add every open issue and PR, not only recently updated ones
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add open issues and PRs from every repo to the project
+        env:
+          GH_TOKEN: ${{ secrets.PROJECT_SYNC_TOKEN }}
+          PROJECT_URL: ${{ vars.PROJECT_URL }}
+          ALL: ${{ inputs.all }}
+        run: |
+          set -euo pipefail
+          if [ -z "$GH_TOKEN" ]; then echo "::error::PROJECT_SYNC_TOKEN secret is not set"; exit 1; fi
+          if ! [[ "$PROJECT_URL" =~ /orgs/([^/]+)/projects/([0-9]+) ]]; then
+            echo "::error::PROJECT_URL variable must look like https://github.com/orgs/<org>/projects/<number>"
+            exit 1
+          fi
+          org="${BASH_REMATCH[1]}"
+          number="${BASH_REMATCH[2]}"
+          project=$(gh api graphql \
+            -f query='query($org: String!, $number: Int!) { organization(login: $org) { projectV2(number: $number) { id } } }' \
+            -f org="$org" -F number="$number" --jq '.data.organization.projectV2.id')
+          since=""
+          if [ "$ALL" != "true" ]; then since="&since=$(date -u -d '-3 hours' +%Y-%m-%dT%H:%M:%SZ)"; fi
+          for repo in $(gh repo list "$org" --no-archived --limit 1000 --json name --jq '.[].name'); do
+            count=0
+            while read -r item; do
+              [ -n "$item" ] || continue
+              if [[ "$item" == https://* ]]; then item=$(gh api "$item" --jq .node_id); fi
+              gh api graphql \
+                -f query='mutation($project: ID!, $content: ID!) { addProjectV2ItemById(input: {projectId: $project, contentId: $content}) { item { id } } }' \
+                -f project="$project" -f content="$item" >/dev/null
+              count=$((count + 1))
+            done < <(gh api --paginate "repos/$org/$repo/issues?state=open&per_page=100$since" \
+              --jq '.[] | if .pull_request then .pull_request.url else .node_id end')
+            echo "$repo: $count"
+          done
