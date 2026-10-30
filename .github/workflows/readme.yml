@@ -30,6 +30,8 @@ jobs:
           node-version: '24'
 
       - name: Build README from site data
+        env:
+          GH_TOKEN: ${{ secrets.PROJECT_SYNC_TOKEN }}
         run: node scripts/build-readme.mjs
 
       - name: Open or update PR
