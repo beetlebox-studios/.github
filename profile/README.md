@@ -89,7 +89,7 @@ By Elan, Max, Drew, Ryan and Ako.<br>
 <a href="https://elanmakesgames.itch.io/sumo-square"><img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/sumo_thumbnail.png" alt="Sumo Square" width="260"/></a>
 
 By Elan, Max, Ryan and Andrew.<br>
-*Unity 2D · Party · 2026 · Released · Jam game*<br>
+*Unity 2D · 2026 · Released · Jam game*<br>
 [Play on itch.io](https://elanmakesgames.itch.io/sumo-square)
 
 ### Katami
@@ -98,7 +98,7 @@ By Elan, Max, Ryan and Andrew.<br>
 
 A puzzle game about folding paper.<br>
 By Max, Ryan, AnglerFishArt, hutthutthutt and Mafgar.<br>
-*Unity 2D · Puzzle · 2026 · In Development*<br>
+*Unity 2D · In Development*<br>
 [Wishlist on Steam](https://store.steampowered.com/app/3828230/KATAMI_A_Paper_Story/)
 
 ### Learn to Count
@@ -106,7 +106,7 @@ By Max, Ryan, AnglerFishArt, hutthutthutt and Mafgar.<br>
 <a href="https://alphons6.itch.io/learn-to-count"><img src="https://raw.githubusercontent.com/beetlebox-studios/branding-assets/main/project_thumbnails/learntocount_thumbnail.png" alt="Learn to Count" width="260"/></a>
 
 By Max, Ryan, Michael and Enchae.<br>
-*Unity 2D · Educational · 2026 · Released · Jam game*<br>
+*Jam game · Released · Jam game*<br>
 [Play on itch.io](https://alphons6.itch.io/learn-to-count)
 
 ### Masknum Opus
